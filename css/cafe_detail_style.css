@@ -1,0 +1,343 @@
+* {
+    margin: 0; padding: 0; list-style: none; text-decoration: none;
+    color: #555555; font-family: "나눔스퀘어라운드";
+}
+body {
+    width: 1920px; height: auto; min-width: 1700px;
+}
+section {
+    width: 100%; height: inherit; padding-bottom: 100px;
+}
+#write {
+    width: 100%; height: 100%; position: fixed;
+    background-color: rgba(0,0,0,0.5); z-index: 100;
+    display: none;
+}
+#write > #write_main {
+    width: 900px; height: 500px; background-color: white;
+    position: absolute; left: 50%; top: 50%;
+    margin-left: -450px; margin-top: -250px;
+}
+#write_main {
+    width: 100%; height: 20%;
+    padding-top: 30px; padding-left: 40px;
+    border-top: 0.25px solid gray;
+}    
+#write_main > form {
+    width: 900px; height: 100%;
+    position: relative; 
+}
+#write_main > form > h1 {
+    font-size: 25px;
+    height: 80px;
+}
+.score {
+    width: 195px; height: 150px; 
+    float: left; position: absolute;
+    left: 25%; top: 0%; text-align: center;
+}
+.score > h2 {    
+    width: 195px; height: 30px; text-align: center;    
+    margin-top: 0px; color: #111111;
+    font-size: 20px; border-bottom: 0.5px solid gray;
+    margin-bottom: 10px;
+}
+.score:nth-child(4) {
+    left: 50%;
+}
+.score:nth-child(6) {
+    left: 75%;
+}
+.score > input[type="radio"] {
+    display: none;
+}
+.score > label {
+    width: 15px; height: 15px; float: left;
+    padding : 15px 15px; margin-left: 15px;
+    background-repeat: no-repeat; background-size: 90%;
+    cursor: pointer;
+}
+.score >  label {
+    background-image: url('../images/Cafe_images/STAR/star_1_grey.png');
+}
+#profile {
+    width: 70px; height: 90px; margin-top: 20px;
+}
+#profile > #write_profile {
+    width: 70px; height: 70px; border-radius: 100%;
+    background-color: red;
+    background-repeat: no-repeat; background-size: cover;
+}
+#profile > p {
+    width: 70px; height: 20px; text-align: center;
+    padding-top: 10px;
+}
+#write_main > form {
+    position: relative;
+}
+#write_main > form > textarea {
+    width: 700px; height: 200px; resize: none;
+    font-size: 25px; margin-left: 100px; margin-top: -100px;
+}
+#write_main > form > .write_bt {
+    width: 150px; height: 45px; position: absolute;
+    border: none; background-color: #A6804D;
+    color: white; border-radius: 20px;
+    left: 30%; top: 87%; font-size: 20px; cursor: pointer;
+}
+#write_main > form > #cancel_com {
+    left: 50%; background-color: white;
+    color: #000000; border: 1px solid gray;
+}
+#write_main > form > #write_img {
+    width: 285px; height: 60px; position: absolute;
+    left: 0%;
+    margin-left: 100px; margin-top: 10px;
+}
+#write_main > form > #write_img > .write_img {
+    width: 50px; height: 50px; margin-left: 5px; margin-top: 5px;
+    background-image: url('../images/Cafe_images/add.png');
+    background-repeat: no-repeat; background-size: cover;
+    background-position: center;
+    display: inline-block; border: 0.25px dashed black;
+    float: left; cursor: pointer;
+}
+#write_img > .write_img > .write_file {
+    width: 100%; height: 100%; position: absolute;
+    opacity: 0; display: none;
+}
+#write_main > form > p {
+    font-size: 15px;
+    margin-top: 75px; margin-left: 100px;
+}
+
+#write_main2 {
+    width: 400px; height: 150px; position: absolute;
+    background-color: white; left: 50%; top: 50%;
+    margin-left: -200px; margin-top: -100px;
+    border-radius: 10px;
+}
+#write_main2 > h1 {
+    width: 400px; height: 90px;
+    text-align: center; line-height: 90px;
+}
+#write_main2 > button {
+    width: 200px; height: 40px;
+    font-size: 20px; border: none;
+    margin-left: 100px; transition: 0.5s;
+    cursor: pointer; border-radius: 10px;
+}
+#write_main2 > button:hover {
+    background-color: #A6804D; color: white;
+}
+#favorite_popup {
+    width: 100%; height: 100%; background-color: rgba(0,0,0,0.2);
+    position: fixed; z-index: 100; display: none;
+}
+#favorite {
+    width: 400px; height: 200px; background-color: white;
+    left: 50%; top: 50%; margin-left: -200px; margin-top: -100px;
+    position: absolute; border-radius: 10px;
+}
+#favorite > h2 {
+    width: 400px; height: 100px; line-height: 100px; text-align: center;
+}
+#favorite > button {
+    width: 80px; height: 40px; border: none; border-radius: 10px;
+    cursor: pointer; 
+}
+#favorite > button:hover {
+    background-color: #A6804D; color: white;
+}
+#favorite > #favorite_yes {
+    margin-left: 100px;
+}
+#favorite > #favorite_no {
+    margin-left: 30px;
+}
+
+section {
+    width: 1903px; height: inherit; margin: 0 auto;
+}
+#imgslide {
+    width: 100%; height: 400px;
+}
+
+.imgslide > img {
+    width: 100%; height: 100%; object-fit: cover; opacity: 1;
+}
+
+#main {
+    width: 100%; display: inline-block;
+}
+article {
+    width: 45%;
+    float: left; margin-left: 17.5%;
+}
+#cafe {
+    width: 100%; height: 420px; position: relative;
+}
+article > #cafe > h1 {
+    width: auto; height: 35px;
+    padding-top: 10%; font-size: 30px; border-bottom: 0.25px solid gray;
+    padding-bottom: 1%;
+}
+#cafe > #cafe_icon{
+    width: 240px; height: 50px; position: relative;
+    float: right; margin-top: -50px; margin-right: -50px;
+}
+#cafe_icon > div {
+    float: left; width: 60px; height: 40px;
+    line-height: 40px; cursor: pointer; position: absolute;
+    margin-left: -50px;
+}
+#cafe_icon > label {
+    float: left; width: 60px; height: 40px;
+    line-height: 40px; cursor: pointer; position: absolute;
+    margin-left: -120px;
+}
+#cafe_icon > label > form > input{
+    display: none;
+}
+#cafe_icon > img {
+    float: right;
+}
+#admin_popup {
+    width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);
+    position: fixed; z-index: 100; left: 0; top: 0;
+    display: none;
+}
+#admin_main {
+    width: 500px; height: 700px; background-color: white;
+    position: absolute; left: 50%; top: 50%;
+    margin-left: -250px; margin-top: -350px;
+}
+#admin_close {
+    width: 100%; height: 100%; position: absolute; 
+    left: 0; top: 0;
+}
+#admin_main > h1 {
+    width: 100%; height: 50px; line-height: 50px;
+    font-size: 30px; text-align: center;
+}
+#admin_main > form > table {
+    width: 400px; height: 500px; margin: 0 auto; margin-top: 30px;
+}
+#admin_main > table tr {
+    height: 20px;
+}
+#admin_main > table tr > td:nth-child(2n-1) {
+    font-size: 20px; text-align: right; padding-right: 30px;
+}
+#admin_main > table tr > td:nth-child(2n) {
+    width: 250px; height: 60px;
+}
+#admin_main input[type='text'] {
+    width: 100%; height: 40px;
+}
+#admin_main input[type="submit"] {
+    width: 100%; height: 50px; border-radius: 50px;
+    border: none; background-color: pink; font-size: 20px;
+    margin-top: 20px;
+}
+#cafe > #cafe_icon > img{
+    width: 40px; height: auto;
+    margin-left: 20px; float: left;
+}
+#cafe > #cafe_icon {
+    right: 0;
+}
+#cafe > #cafe_icon > #icon_like {
+    margin-top: 8px; float: left;
+}
+#cafe > #cafe_icon > img:hover {
+    opacity: 1; cursor: pointer;
+}
+#cafe_icon > p {
+    position: absolute; left: 30%; top: 0%;
+    font-size: 10px;
+}
+article > #cafe > table {
+    width: 100%; margin-top: 20px;
+    padding-bottom: 20px;
+}
+article > #cafe > table td:nth-child(1) {
+    width: 100px; height: 30px; color: gray;
+}
+
+#cafe_comments {
+    width: 100%; height: auto;
+    padding-top: 3%; margin-bottom: 100px;
+    border-top: 0.25px solid gray;
+}
+#cafe_comments > .comments {
+    width: 100%; position: relative; height: inherit;
+    border-bottom: 0.25px solid #E6E6E6;
+    padding-top: 20px; padding-bottom: 20px;
+}
+#load {
+    width: 50px; height: 20px; text-align: center;
+    margin: 0 auto; margin-top: 10px; cursor: pointer;
+}
+.js-load {
+    display: none;
+}
+.js-load.active {
+    display: block;
+}
+#cafe_comments > .comments:hover {
+    background-color: #eeeeee;
+}
+.comments > .profile {
+    width: 50px; height: 50px; border-radius: 100%;
+    float: left; background-repeat: no-repeat; background-size: cover;
+    margin-left: 20px;
+}
+.comments > .comment_star {
+    width: 200px; height: 90px; position: absolute;
+    right: 0; float: left; top: 50%; margin-top: -45px;
+    margin-right: 50px;
+}
+.comments > .comment_star > #comment_star2 {
+    width: 200px; height: 30px; float: left;
+    margin-bottom: 3px;
+}
+.comments > .comment_star > #comment_star2 > div {
+    width: 60px; height: inherit; text-align: right;
+    line-height: 30px; margin-left: 20px; margin-right: 10px;
+    float: left; font-size: 18px;
+}
+.comments > .comment_star > #comment_star2 > img {
+    width: 20px; margin-left: 5px; float: left;
+    margin-top: 5px;
+}
+.comments > h3 {
+    width: auto; height: 50px; float: left; line-height: 50px;
+    margin-left: 10px;
+}
+.comments > h5 {
+    font-weight: 100; width: 500px; height: 55px; line-height: 55px; float: left;
+}
+.comments > p {
+    width: 560px; height: auto; margin-top: 60px;
+    padding-top: 10px; margin-left: 20px; 
+}
+.comments > .com_del {
+    width: 30px; position: absolute; right: 10px;
+    cursor: pointer; transition: 0.5s;
+    bottom: 10px;
+}
+.comments > #comment_img {
+    width: 500px; height: 100px;
+    margin-left: 20px; margin-top: 10px;
+}
+.comments > #comment_img > img {
+    width: 100px; height: 100px; object-fit: cover;
+}
+aside {
+    width: 20%; height: auto; background-color: #dddddd;
+    float: right;
+}
+#map {
+    width: 100%; height: 400px;
+}

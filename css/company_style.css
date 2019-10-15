@@ -1,0 +1,101 @@
+* {
+    margin: 0; padding: 0; text-decoration: none; list-style: none;
+    color: black;
+}
+body {
+    width: 100%; height: 100%;
+}
+section {
+    width: 1900px; height: inherit;
+}
+#top {
+    width: 100%; height: 800px;
+}
+#top2 {
+    width: 1300px; height: 700px;
+    margin: 0 auto; padding: 50px 0;
+    padding-bottom: 145px;
+    border-bottom: 5px solid #EFCACA;
+}
+#top_img {
+    width: 100%; height: 400px;
+}
+#top_img > img {
+    width: 100%; height: 100%; object-fit: cover;
+}
+#text {
+    width: 600px; height: 100px;
+    margin: 0 auto; margin-top: 100px;
+}
+#text > h2 {
+    text-align: center; font-size: 40px;
+}
+#sub_text {
+    width: 900px; height: 50px; margin: 0 auto;
+    margin-top: 30px;
+}
+#sub_text > p {
+    text-align: center; font-size: 25px;
+}
+#staff {
+    width: 100%; height: 1600px; background-color: #FBF2E8;
+    margin-top: 5px; position: relative;
+}
+.text {
+    width: 300px; height: 70px; background-color: #EFCACA;
+    font-size: 35px; color: white; border-radius: 70px; text-align: center;
+    line-height: 70px; position: absolute;
+    left: 50%; top: 0; margin-left: -150px; margin-top: -37.5px;
+}
+#staff2 {
+    width: 1300px; height: 1500px; margin: 0 auto; margin-top: 100px;
+    padding-top: 100px; border-bottom: 5px solid #4E291C;
+}
+.text_clear {
+    width: 800px; height: 60px; text-align: center; margin: 0 auto;
+    line-height: 30px; font-size: 25px; margin-bottom: 30px;
+}
+.member {
+    width: 500px; height: 600px; float: left;
+    margin-top: 50px;
+}
+.member > img {
+    width: 500px;
+}
+.member > h2 {
+    width: 500px; text-align: center; margin-top: 20px;
+}
+.member > h3 {
+    width: 500px; text-align: center; margin-bottom: 20px;
+}
+.member:nth-child(3n), .member:nth-child(5n) {
+    float: right;
+}
+#we_company {
+    width: 100%; height: 700px; position: relative;
+}
+#we_text {
+    background-color: #4E291C;
+}
+#we_company2 {
+    width: 1300px; height: 700px; padding-top: 100px; margin: 0 auto;
+}
+#we_com {
+    width: 1050px; height: inherit; margin: 0 auto;
+}
+.we_company {
+    width: 250px; height: 600px; float: left;
+    margin-left: 150px;
+}
+.we_company:nth-child(1) {
+    margin-left: 0px;
+}
+.we_company > img {
+    width: inherit; height: auto;
+}
+.we_company > h2 {
+    width: inherit; height: 50px; text-align: center; line-height: 50px;
+}
+.we_company > h3 {
+    width: inherit; height: 200px; text-align: center;
+}

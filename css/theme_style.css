@@ -1,0 +1,91 @@
+* {
+    margin: 0; padding: 0; list-style: none; text-decoration: none;
+    color: black;
+}
+body {
+    width: 100%; height: 100%;
+}
+/*body*/
+section {
+    width: 1900px; height: 950px; margin: 0 auto;
+}
+/*header*/
+section > header {
+    width: 100%; height: 350px; overflow: hidden;
+    background-repeat: no-repeat; position: relative;
+    background-size: cover;
+}
+section > header > h1 {
+    width: 300px; height: 50px; font-size: 40px; position: absolute;
+    left: 250px; top: 50%; margin-top: -25px;
+    padding-left: 20px; line-height: 50px; color: white;
+    font-weight: 700; border-left: 10px solid white;
+}
+header > h3 {
+    width: auto; font-size: 25px; position: absolute;
+    left: 250px; top: 50%; margin-top: 35px; color: white;
+}
+/*contents*/
+#contents {
+    width: 1400px; height: auto; margin: 0 auto;
+}
+#theme1 {
+    margin-top: 5%;
+}
+.theme {
+    width: 100%; height: 70%; margin-bottom: 2%;
+}
+.theme_pack {
+    width: 50%; height: 100%; float: left;
+    position: relative;
+}
+.theme_pack img {
+    width: 100%; height: 100%; transition: 0.3s; object-fit: cover;
+}
+.theme_pack > div > a > div:hover > img {
+     transform: scale(1.05); opacity: 0.5;
+}
+.theme_pack > #opacity {
+    width: 98%; height: 101.5%; position: absolute; opacity: 1;
+    background-color: rgba(40,40,40,0.3); z-index: 10;
+} 
+.theme_pack > h1 {
+    width: 24%; height: 70px; position: absolute;
+    left: 50%; top: 50%; background-color: #aaaaaa;
+    margin-left: -12%; margin-top: -5%;
+    text-align: center; line-height: 70px;
+    z-index: 30; border-radius: 70px; color: white;
+}
+.theme_pack > .theme_small {
+    width: 32%; height: 68.5%; float: left; margin-right: 1%; overflow: hidden;
+    position: relative;
+}
+.theme_pack > .theme_small > a > div {
+    width: 100%; height: 50%; margin-bottom: 2%; overflow: hidden; position: relative;
+}
+.theme_pack > .theme_big {
+    width: 65%; height: 68.5%; overflow: hidden; position: relative;
+}
+.theme_pack > .theme_small2 {
+    width: 100%; height: 32%; float: left; position: relative; margin-top: 1%;
+}
+.theme_pack > .theme_small2 > a > div {
+    width: 32%; height: 100%; overflow: hidden; position: relative;
+    float: left; margin-right: 1%; margin-top: : 1%;
+}
+.theme_pack > .theme_small2 > a > div:nth-child(1){
+    border: none;
+}
+/*안에 h2태그*/
+.theme_pack > div > a > div > h2 {
+    left: 50%; top: 50%; width: 100px; height: 40px; background-color: gray;
+    position: absolute; text-align: center; line-height: 40px; border-radius: 40px;
+    color: white; margin-left: -50px; margin-top: -20px; opacity: 0; transition: 0.3s;
+    font-size: 15px;
+}
+.theme_pack > div > a > div:hover > h2 {
+    opacity: 1;
+}
+#theme3 {
+    margin-bottom: 5%;
+}

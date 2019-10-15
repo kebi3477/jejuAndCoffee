@@ -1,0 +1,168 @@
+@charset="utf-8";
+* {
+    margin: 0; padding: 0; text-decoration: none; list-style: none;
+    color: black; font-family: '나눔스퀘어라운드'; outline: none;
+}
+body { 
+    width: 1900px; height: auto; min-width: 1200px; min-height: 980px;
+}
+/*body*/
+#body { width: 1900px; height: 800px; margin: 0 auto;
+    background-image: url('../images/Main_images/M_Coffee1.jpg');
+    background-repeat: no-repeat; background-size: cover;
+    background-position: bottom;
+}
+/*main_img*/
+#main_img {
+    position:relative; width: 1900px; height: 800px;
+}
+#main_img > img {
+    width: 100%; height: auto; position: fixed; z-index: -1;
+    transform: scale(1.1); margin-top: -100px;
+}
+#main_img > img.scale {
+    transform: scale(1); transition: 10s;
+}
+#main_img > hgroup {
+    width: 40%; height: 450px;
+    position: absolute; left: 50%; top: 15%;
+    margin-left: -25%; text-align: left;
+}
+#main_img > hgroup > h1 {
+    width: 100%; height: 15%;
+    color: white; line-height: 100px;
+    font-size: 40px; opacity: 0;
+}
+#main_img > hgroup > h1:nth-child(2) {
+    text-align: right;
+}
+#main_img > #main_search {
+    width: 700px; height: 60px; position: absolute;
+    z-index: 90; background-color: white;
+    left: 50%; top: 50%; margin-left: -350px;
+    border-radius: 60px; border: 5px solid #EFCACA;
+}
+#main_search > img {
+    width: 40px; margin-left: 20px; margin-top: 10px; float: left;
+}
+#main_search > form > #search_text {
+    width: 400px; height: 40px; float: left;
+    margin-top: 10px; margin-left: 20px; border: none;
+    font-size: 20px;
+}
+#main_search > form > #search_button {
+    width: 150px; height: 60px; float: right;
+    border: 1px solid #EFCACA; border-radius: 60px; background-color: #EFCACA;
+    color: white; font-size: 20px; margin-right: -2px; cursor: pointer;
+}
+
+#main_img > h3 {
+    width: 200px; height: auto; text-align: center;
+    position: absolute; color: white;
+    left: 50%; top: 93%; margin-left: -100px;
+}
+/*event&coupon*/
+#eventncoupon {
+    width: 100%; height: auto; background-color: #ffffff; overflow: hidden;
+}
+/*event&coupon 공통*/
+.enc {
+    width: 100%; height: 660px; overflow: hidden; border-bottom: 0.1px solid gray;
+    position: relative;
+}
+.enc > img{
+    width: 1000px; height: 560px; position: relative;
+    object-fit: cover; margin-top: 50px; margin-left: 150px;
+}
+.enc > .contents {
+    width: 35%; height: 50%; position: absolute; padding-top: 150px;
+    z-index: 20; left: 50%; top: 0%; margin-left: 100px;
+}
+.enc > .contents > h1 {
+    font-size: 70px; line-height: 90px; margin-left: 200px;
+}
+.enc > .contents > a > div {
+    width: 415px; height: 80px; text-align: center; line-height: 80px;
+    border-radius: 80px; font-size: 35px; margin-top: 50px;
+}
+.enc > .contents > a > div > h3 {
+    color: white; font-weight: 1; transition: 0.3s;
+}
+/*event*/
+#event {
+    float: left; text-align: left;
+}
+#event > #event_contents > a > div {
+    background-color: #EFCACA; margin-left: 200px;
+}
+/*theme&cafe 공통*/
+.themencafe{
+    width: 100%; height: 700px; background-color: #ffffff;
+}
+.plus{
+    width: 120px; height: 50px; line-height: 50px; position: relative;
+    left: 90%; margin-top: 50px; 
+}
+.plus > h3{
+    font-size: 25px; float: left;
+}
+.plus > img{
+    width: 25px; margin-left: 5px; margin-top: 11.5px; transition: 0.3s;
+}
+.plus:hover > img{
+    transform: rotateZ(90deg);
+}
+.themencafe > h1{
+    width: 500px; height: 80px; font-size: 50px; 
+    text-align: center; margin: 0 auto; line-height: 80px;
+}
+.themencafe > .slide{
+    width: 1540px; height: 60%; margin: 0 auto; margin-top: 80px;
+}
+.theme_slide , .cafe_slide{
+    width: 500px; height: 400px; position: relative;
+    overflow: hidden; float: left;
+    margin-right: 20px; cursor: pointer; background-color: white;
+    opacity: 0; transform: translateY(80px);
+}
+.theme_slide:nth-child(3) , .cafe_slide:nth-child(3){
+    margin-right: 0px;
+}
+.theme_slide > a > img , .cafe_slide > a > img{
+     width: 100%; height: 100%; transition: 0.3s; object-fit: cover;
+}
+.theme_focus , .cafe_focus{
+    width: 24%; height: 12%; background-color: rgba(255,255,255,0.9);
+    position: relative; text-align: center;
+    left: 0; top: 0;
+    left: 50%; top: 50%;
+    margin-left: -12%; margin-top: -3%;
+    line-height: 50px; border-radius: 10px;
+    transition: 0.3s; opacity: 0;
+}
+.theme_focus , .cafe_focus{
+    position: absolute;
+}
+.theme_slide:hover > a > img ,.cafe_slide:hover > a > img {
+    transform: scale(1.05);
+}
+.theme_slide:hover > a > .theme_focus ,.cafe_slide:hover > a > .cafe_focus {
+    opacity: 1; transform: translateY(-10px);
+}
+/*theme*/
+/*
+#theme { background-color: #404A4A;}
+#theme_plus > h3 {
+    color: white;
+}
+#theme > h1 {
+     border-bottom: 2px solid white; color: white;
+}
+*/
+/*cafe*/
+#cafe > h1 , #theme > h1{
+    border-bottom: 2px solid black;
+}
+#theme {
+    border-bottom: 0.1px solid #aaaaaa;
+}
